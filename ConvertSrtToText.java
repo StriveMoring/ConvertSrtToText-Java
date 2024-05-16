@@ -13,7 +13,7 @@ public class ConvertSrtToText {
 
             String line;
             while ((line = reader.readLine()) != null) {
-                // 如果是序号或时间码，就跳过了
+                // 如果是序号或时间码就跳过了
                 if (line.matches("\\d+") || line.matches("\\d{2}:\\d{2}:\\d{2},\\d{3}\\s-->\\s\\d{2}:\\d{2}:\\d{2},\\d{3}") || "".equals(line)) {
                     continue;
                 }
